@@ -1,18 +1,16 @@
 import Head from 'next/head'
+import ComingSoon from '../components/ComingSoon'
 
 export default function Home() {
   return (
     <div className="container">
+    
       <Head>
         <title>YoutubeNLP</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">
-          Coming Soon!
-        </h1>
-      </main>
+      <ComingSoon></ComingSoon>
 
       <style jsx>{`
         .container {
@@ -24,22 +22,6 @@ export default function Home() {
           align-items: center;
         }
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-          text-align: center;
-        }
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -48,20 +30,6 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
   )
 }
