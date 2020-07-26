@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "scope": "youtubenlp",
+  "public": false,
+  "github": {
+    "enabled": false
+  }
+}

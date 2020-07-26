@@ -1,0 +1,23 @@
+# This workflow will deploy the master branch code to youtubenlp.vercel.app which is bind to the domain youtubenlp.com
+
+name: Frontend Deployment
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Deploy script
+      run: echo "Deployment ..."
+
+
