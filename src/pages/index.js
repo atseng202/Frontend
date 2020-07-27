@@ -1,35 +1,37 @@
-import Head from 'next/head'
-import ComingSoon from '../components/ComingSoon'
+import Head from "next/head";
+import ComingSoon from "../components/ComingSoon";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="container">
-    
-      <Head>
-        <title>YoutubeNLP</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <Navbar />
+      <div className="container">
+        <Head>
+          <title>YoutubeNLP</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <ComingSoon></ComingSoon>
+        <ComingSoon></ComingSoon>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
+        <style jsx>{`
+          .container {
+            min-height: 100vh;
+            padding: 0 0.5rem;
+            display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
-        }
-      `}</style>
 
+          @media (max-width: 600px) {
+            .grid {
+              width: 100%;
+              flex-direction: column;
+            }
+          }
+        `}</style>
+      </div>
     </div>
-  )
+  );
 }
