@@ -7,4 +7,7 @@ module.exports = withCSS({
     devIndicators: {
         autoPrerender: false,
     },
+    env: {
+        API_BASEURL: 'https://youtubenlp.us-south.cf.appdomain.cloud',
+    }
 })
