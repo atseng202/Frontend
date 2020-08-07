@@ -12,9 +12,9 @@ class VideoDescripiton extends Component {
     componentDidMount() {
         if (this.props.id) {
             this.getDescription();
-        }   
+        }
     }
-    getDescription = async ()=>{
+    getDescription = async () => {
         try {
             const res = await api.videoDescription(this.props.id);
             this.setState({ description: res.data.description });
@@ -28,11 +28,11 @@ class VideoDescripiton extends Component {
     render() {
         return (
             <>
-            {this.state.description &&
-                <p dangerouslySetInnerHTML={{__html:this.state.description.replace(/\n/g, '<br />')}} >
-                    
-                </p>
-            }
+                {this.state.description &&
+                    <p dangerouslySetInnerHTML={{ __html: this.state.description.replace(/\n/g, '<br />') }} >
+
+                    </p>
+                }
             </>
         );
     }

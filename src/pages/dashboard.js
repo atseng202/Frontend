@@ -50,9 +50,11 @@ class Dashboard extends React.Component {
                             <Col md={12}>
                                 <VideoTitle>
                                     {this.state.videoInfo.title}
-                    </VideoTitle>
+                                </VideoTitle>
                                 <VideoInfo>
-                                    <span className="channel-name">{this.state.videoInfo.channelTitle} <CheckCircleFilled /></span>
+                                    <span className="channel-name">{this.state.videoInfo.channelTitle}
+                                        {/* <CheckCircleFilled /> */}
+                                    </span>
                                     <span className="views">{this.state.videoInfo.viewCount} views</span>
                                     <span className="posted-at">{moment.utc(this.state.videoInfo.publishedAt).local().fromNow()}</span>
                                 </VideoInfo>
@@ -66,7 +68,7 @@ class Dashboard extends React.Component {
                                 <MoreInfoCollapse bordered={false}>
                                     <MoreInfoPanel header={<DownOutlined />} showArrow={false}>
                                         <VideoDescripiton id={this.state.id} />
-                            </MoreInfoPanel>
+                                    </MoreInfoPanel>
                                 </MoreInfoCollapse>
                             </Col>
                         </Row>
