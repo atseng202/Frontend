@@ -1,5 +1,24 @@
 import styled from "styled-components";
-import { Row, Collapse, Tag, Tabs } from "antd";
+import { Row, Collapse, Tag, Tabs, Input } from "antd";
+
+export const HeaderSearch = styled(Input.Search)`
+    background:none;
+    border:0;
+    border-bottom:1px solid white;
+    &:focus{
+        box-shadow: none !important;
+    }
+    & input{
+        background:none;
+        color:white;
+    }
+    & .ant-input-search-icon{
+        color:white;
+    }
+    & .ant-input-search-icon::before{
+        display:none;
+    }
+`
 
 export const VideoBannerRow = styled.div`
     background-color: #f9f9f9;

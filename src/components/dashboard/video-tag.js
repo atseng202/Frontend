@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiUtils from '../helpers/apiUtils';
 import { VideoTag } from '../styles/dashboard-style';
+import { notification } from 'antd';
 const api = new ApiUtils();
 
 class VideoTags extends Component {

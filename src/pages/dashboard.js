@@ -27,6 +27,16 @@ class Dashboard extends React.Component {
             await this.getVideoInfo();
         });
     }
+    UNSAFE_componentWillReceiveProps(newProps) {
+        if (this.props.router?.query?.id != newProps.router?.query?.id && newProps.router?.query?.id) {
+            this.setState({
+                id: newProps.router?.query?.id,
+                videoInfo: null,
+            }, async () => {
+                await this.getVideoInfo();
+            })
+        }
+    }
     getVideoInfo = async () => {
         try {
             const res = await api.videoInfo(this.state.id);
