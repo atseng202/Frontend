@@ -6,6 +6,7 @@ import moment from "moment";
 import Main from '../components/layouts/main'
 import { VideoTitle, VideoBannerRow, VideoInfo, SideLink, MoreInfoCollapse, MoreInfoPanel, VideoTag, AnalysisTabs, AnalysisTabPane, AnalysisTabWrapper } from '../components/styles/dashboard-style'
 import SentimentAnalysis from '../components/dashboard/sentiment-analysis';
+import EmotionAnalysis from '../components/dashboard/emotion-analysis';
 import { youtubeParser } from '../components/helpers/urlParser';
 import ApiUtils from '../components/helpers/apiUtils';
 import VideoDescripiton from '../components/dashboard/video_description';
@@ -89,7 +90,7 @@ class Dashboard extends React.Component {
                                 Content of Tab Pane 1
                         </AnalysisTabPane>
                             <AnalysisTabPane tab="Emotion Analysis" key="ea">
-                                Content of Tab Pane 1
+                                <EmotionAnalysis />
                         </AnalysisTabPane>
                             <AnalysisTabPane tab="NER" key="ner">
                                 Content of Tab Pane 1
