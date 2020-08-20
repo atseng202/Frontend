@@ -87,3 +87,9 @@ export const AnalysisTabWrapper = styled.div`
     padding-top:20px;
     padding-bottom:20px;
 `
+
+export const NERTablesContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`

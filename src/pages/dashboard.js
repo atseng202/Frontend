@@ -10,6 +10,8 @@ import { youtubeParser } from '../components/helpers/urlParser';
 import ApiUtils from '../components/helpers/apiUtils';
 import VideoDescripiton from '../components/dashboard/video_description';
 import VideoTags from '../components/dashboard/video-tag';
+
+import NERAnalysis from '../components/dashboard/ner_analysis'
 const api = new ApiUtils();
 class Dashboard extends React.Component {
     constructor(props) {
@@ -87,19 +89,19 @@ class Dashboard extends React.Component {
                             </AnalysisTabPane>
                             <AnalysisTabPane tab="Comments" key="cm">
                                 Content of Tab Pane 1
-                        </AnalysisTabPane>
+                            </AnalysisTabPane>
                             <AnalysisTabPane tab="Emotion Analysis" key="ea">
                                 Content of Tab Pane 1
-                        </AnalysisTabPane>
+                            </AnalysisTabPane>
                             <AnalysisTabPane tab="NER" key="ner">
-                                Content of Tab Pane 1
-                        </AnalysisTabPane>
+                                <NERAnalysis />
+                            </AnalysisTabPane>
                             <AnalysisTabPane tab="LDA" key="lda">
                                 Content of Tab Pane 1
-                        </AnalysisTabPane>
+                            </AnalysisTabPane>
                             <AnalysisTabPane tab="Wordcloud" key="wc">
                                 Content of Tab Pane 1
-                        </AnalysisTabPane>
+                            </AnalysisTabPane>
                         </AnalysisTabs>
                     </Col>
                 </Row>
