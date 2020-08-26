@@ -32,5 +32,12 @@ class ApiUtils {
             url: `/video/${videoId}/keywords`,
         })
     }
+    //to be changed when backend lda completed
+    topics = (videoId, numTopics) => {
+        return this.axios({
+            method: 'GET',
+            url: `/components/schemas/${videoId}/?n=${numTopics}`,
+        })
+    }
 }
 export default ApiUtils;
