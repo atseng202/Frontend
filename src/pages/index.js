@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ComingSoon from "../components/ComingSoon";
+import WordCloud from '../components/dashboard/word-cloud';
 
 export default function Home() {
   return (
