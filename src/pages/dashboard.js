@@ -92,16 +92,8 @@ class Dashboard extends React.Component {
                                 Content of Tab Pane 1
                             </AnalysisTabPane>
                             <AnalysisTabPane tab="Emotion Analysis" key="ea">
-<<<<<<< HEAD
-                                Content of Tab Pane 1
-                            </AnalysisTabPane>
-||||||| f9e2a51
-                                Content of Tab Pane 1
-                        </AnalysisTabPane>
-=======
                                 <EmotionAnalysis />
                         </AnalysisTabPane>
->>>>>>> dev
                             <AnalysisTabPane tab="NER" key="ner">
                                 <NERAnalysis />
                             </AnalysisTabPane>
