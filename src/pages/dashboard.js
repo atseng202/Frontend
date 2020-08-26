@@ -7,6 +7,7 @@ import Main from '../components/layouts/main'
 import { VideoTitle, VideoBannerRow, VideoInfo, SideLink, MoreInfoCollapse, MoreInfoPanel, VideoTag, AnalysisTabs, AnalysisTabPane, AnalysisTabWrapper } from '../components/styles/dashboard-style'
 import SentimentAnalysis from '../components/dashboard/sentiment-analysis';
 import EmotionAnalysis from '../components/dashboard/emotion-analysis';
+import TopicModelling from '../components/dashboard/topic-modelling';
 import { youtubeParser } from '../components/helpers/urlParser';
 import ApiUtils from '../components/helpers/apiUtils';
 import VideoDescripiton from '../components/dashboard/video_description';
@@ -93,12 +94,12 @@ class Dashboard extends React.Component {
                             </AnalysisTabPane>
                             <AnalysisTabPane tab="Emotion Analysis" key="ea">
                                 <EmotionAnalysis />
-                        </AnalysisTabPane>
+                            </AnalysisTabPane>
                             <AnalysisTabPane tab="NER" key="ner">
                                 <NERAnalysis />
                             </AnalysisTabPane>
                             <AnalysisTabPane tab="LDA" key="lda">
-                                Content of Tab Pane 1
+                                <TopicModelling />
                             </AnalysisTabPane>
                             <AnalysisTabPane tab="Wordcloud" key="wc">
                                 Content of Tab Pane 1
