@@ -1,11 +1,9 @@
 import Head from "next/head";
 import ComingSoon from "../components/ComingSoon";
-import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <div className="container">
         <Head>
           <title>YoutubeNLP</title>
